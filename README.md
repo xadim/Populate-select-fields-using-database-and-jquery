@@ -5,5 +5,5 @@ This is a simple way to populate number of select fields using jquery and databa
 - index.html
 - AjaxRequest.php
 - AjaxRequest.js
-- 
+- populatefields.sql
 All of them are important!
