@@ -1,0 +1,72 @@
+<!----
+
+ * Plugin Name: Select with Database
+ * Plugin URI: http://www.sayfdev.com/
+ * Description: A simple way to populate select fields using jquery and database
+ * Author: Khadime Diakhate
+ * Author URI: http://www.sayfdev.com
+ * Version: 1.0
+ *
+ * Copyright: (c) 2014 Sayfdev, LLC. (contact@sayfdev.com)
+ *
+ * License: GNU General Public License v3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * @author    Xadim
+ * @category  Custom
+ * @copyright Copyright (c) 2014, SayfDEV, LLC.
+ * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ 
+ ----->
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<title>Populate 3 fields with database</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" language="javascript"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="AjaxRequest.js"></script>
+</head>
+<body>
+<div class="page">
+
+
+  <p>Simpliest way to Populate 3 fields with database</p>
+  <form name="Reporting" action="report_categorize.php" method="post">  
+  <table class="tableform">
+  <tr>
+    <td valign="middle">
+  
+ <span style="font-size:12px; color:#77787b; margin-right:5px;">Country</span>
+<select name="Country" id="Country" onchange="htmlData3('AjaxRequest.php', 'Country='+this.value)" style="background-color:#fff; width:200px; border:1px solid #77787b; margin-left:5px;font-size:12px; color:#77787b;">
+    <option selected="selected" value="">---Choose the Country---</option>
+    <option  value="1">---Africa---</option>
+    <option  value="2">---Asia---</option>
+    <option  value="3">---Europe---</option>
+    <option  value="4">---US---</option>
+    
+  </select>
+      </td>
+<td valign="middle">
+<div id="txtRslt1" style='display:inline'>
+  <select name="State">
+    <option selected="selected" value="nochoice">Choose the Country first</option>
+  </select>
+</div>
+</td>
+<td valign="middle">
+<div id="txtRslt2" style='display:inline'>
+  <select name="City">
+    <option selected="selected" value="nochoice">Choose the City first</option>
+  </select>
+</div> 
+</td>
+</table>
+
+ </form>
+
+</body>
+</html>
